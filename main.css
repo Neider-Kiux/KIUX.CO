@@ -80,9 +80,8 @@
 
 .tarjetas {
 	display: flex;
-	width: 85vw;
 	justify-content: center;
-	gap: 20px;
+	gap: 50px;
 
 	& .tarjeta {
 		background-color: #ffffffcc;
@@ -90,9 +89,9 @@
 		flex-direction: column;
 		align-items: center;
 		gap: 30px;
-		width: 340px;
+		width: 340px ;
 		height: 600px;
-		padding: 1em;
+		padding: 15px;
 		border-radius: 0.5em;
 		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.612);
 
@@ -116,6 +115,8 @@
 		}
 	}
 }
+
+
 
 .paraQuien_respuesta,
 .Subtitulo {
@@ -166,7 +167,6 @@
 		}
 
 		& .tarjetas {
-			width: 70vw;
 			gap: 50px;
 
 			& .tarjeta {
@@ -186,7 +186,6 @@
 
 .testimonios {
 	& .tarjetas {
-		width: 70vw;
 		gap: 50px;
 
 		& .tarjeta {
@@ -379,6 +378,32 @@ footer {
 @media (max-width: 767px) {
 	.redes-nav {
 		font-size: 1.5em;
+	}
+
+	* {
+
+		line-height: 1em;
+		letter-spacing: 0.05em;
+		& h1 {
+			font-size: 1.9em;
+		}
+
+		& h2 {
+			font-size: 1.3em;
+		}
+
+		& p {
+			font-size: 1.2em;
+		}
+	}
+
+	.contactanos .wpcf7 {
+		width: 100vw;
+		margin: 0;
+
+		& label {
+			font-size: 1em;
+		}
 	}
 }
 
