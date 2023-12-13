@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Kanit:wght@300&family=Rubik+Bubbles&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Kanit:wght@300&family=Rubik+Bubbles&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Kanit:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Kanit:wght@300&display=swap');
 :root {
 	--main-blue-color: #2c6dac;
+	--main-blue-opaco-color: #2c6dacaa;
 	--main-orange-color: #f9a223;
 	--main-black-color: #1a1a1a;
+	--main-black-opaco-color: #1a1a1a55;
 	--main-white-color: #fefefe;
 	--main-white-color-: #fefefe;
 	--main-grey-color: #9b9b9b;
@@ -19,15 +21,12 @@
 	width: 100%;
 	opacity: 0.9;
 	top: 0;
+	background-color: #2c6dac;
+	padding: 10px 30px;
 }
 
 .header_logo {
 	height: 40px;
-}
-
-.site-header {
-	background-color: #2c6dac;
-	padding: 10px 30px;
 }
 
 .header-inner {
@@ -51,13 +50,13 @@ h1,
 h2,
 h3,
 h4 {
-	font-family: "Kanit", sans-serif;
+	font-family: 'Kanit', sans-serif;
 	font-weight: bolder;
 	font-size: 1em;
 }
 
 p {
-	font-family: "Josefin Sans", sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 	font-size: 1em;
 }
 
@@ -129,7 +128,7 @@ section {
 .comoLogrado {
 	width: 100vw;
 	height: 60vh;
-	background: no-repeat center/100% url("Iconos/alcanzando-una-meta1.jpg");
+	background: no-repeat center/100% url('Iconos/alcanzando-una-meta1.jpg');
 	margin-bottom: 200px;
 
 	& .container {
@@ -170,7 +169,7 @@ section {
 
 .revActividades {
 	background-image: linear-gradient(#0006, #0002),
-		url("Iconos/grupotrabajando.jpg");
+		url('Iconos/grupotrabajando.jpg');
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
@@ -235,25 +234,29 @@ section {
 }
 
 footer {
-	width: 100%;
+	width: 100vw;
 	background-color: #2c6dac;
+	padding-top: 2vh;
 	& .inicial {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		gap: 5em;
+		flex-wrap: wrap;
 
 		& .contacto {
-			font-size: 2em;
+			font-size: 2vw;
 			color: white;
 			display: flex;
 			flex-direction: column;
-			gap: 0.05em;
+			gap: 1vw;
 			align-items: start;
+			width: 30vw;
+			margin: 0;
+			align-items: center;
 
 			& div {
 				display: flex;
-				gap: 1em;
+				gap: 2vw;
 				align-items: center;
 				justify-items: start;
 				position: initial;
@@ -263,21 +266,27 @@ footer {
 		& .sellos {
 			display: flex;
 			flex-direction: row;
+			width: 30vw;
+			justify-content: center;
+			margin: 0;
 
 			& .icono {
-				height: 80px;
+				height: 5vw;
 			}
 
 			& .SelloCalidad {
-				height: 130px;
+				height: 8vw;
 			}
 		}
 
 		& .redes {
+			margin: 0;
 			display: flex;
 			flex-direction: row;
-			gap: 0.5em;
-			font-size: 2.5em;
+			gap: 1vw;
+			font-size: 3vw;
+			width: 31vw;
+			justify-content: center;
 
 			& .icono {
 				color: white;
@@ -301,7 +310,7 @@ footer {
 		width: 100%;
 	}
 
-	& input[type="text"] {
+	& input[type='text'] {
 		background-color: #fff;
 		color: #000;
 	}
@@ -347,9 +356,26 @@ footer {
 			height: 40px;
 		}
 
-		& .ls-button-dir {
+		& .ls-button-dir,
+		button {
+			display: flex;
 			width: 60px;
 			font-size: 1.81em;
+			align-items: center;
+			justify-content: center;
+			color: var(--main-grey-color);
+			border: 1px solid var(--main-black-opaco-color);
+			border-radius: 5px;
+		}
+
+		& button:hover {
+			background-color: var(--main-blue-opaco-color);
+			border: 1px solid var(--main-blue-color);
+			color: var(--main-beige-color);
+		}
+
+		& .ls-red {
+			background-color: var(--main-beige-color);
 		}
 	}
 }
