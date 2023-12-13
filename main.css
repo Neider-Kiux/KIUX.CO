@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Kanit:wght@300&family=Rubik+Bubbles&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Kanit:wght@300&family=Rubik+Bubbles&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Kanit:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Kanit:wght@300&display=swap");
 :root {
 	--main-blue-color: #2c6dac;
 	--main-blue-opaco-color: #2c6dacaa;
@@ -44,33 +44,37 @@
 	margin: 0;
 	padding: 0;
 	line-height: normal;
-}
 
-h1,
-h2,
-h3,
-h4 {
-	font-family: 'Kanit', sans-serif;
-	font-weight: bolder;
-	font-size: 1em;
-}
-
-p {
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 1em;
-}
-
-section {
-	width: 100vw;
-	margin-top: 100px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 3em;
-	& h1.titulo {
-		color: #2c6dac;
+	& h1 {
 		font-size: 4em;
+		color: #2c6dac;
 		text-align: center;
+	}
+
+	& h2 {
+		color: black;
+		font-size: 1.5em;
+		text-align: center;
+	}
+
+	& h3,
+	h4 {
+		font-family: "Kanit", sans-serif;
+		font-weight: bolder;
+	}
+
+	& p {
+		font-family: "Josefin Sans", sans-serif;
+		font-size: 1.5em;
+	}
+
+	& section {
+		width: 100vw;
+		margin-top: 100px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 3em;
 	}
 }
 
@@ -78,7 +82,6 @@ section {
 	display: flex;
 	width: 85vw;
 	justify-content: center;
-	flex-wrap: wrap;
 	gap: 20px;
 
 	& .tarjeta {
@@ -93,15 +96,12 @@ section {
 		border-radius: 0.5em;
 		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.612);
 
-		& .titulo {
-			color: black;
-			font-size: 1.5em;
+		& .tituloTarjeta {
 			height: 12%;
 		}
 
 		& .texto {
 			text-align: justify;
-			font-size: 1.5em;
 		}
 
 		& .icono {
@@ -125,10 +125,29 @@ section {
 	width: 85vw;
 }
 
+.revActividades {
+	background-image: linear-gradient(#0006, #0002),
+		url("/Iconos/grupotrabajando.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	padding-top: 30px;
+
+	& .Subtitulo,
+	& .tituloSeccion {
+		color: white;
+	}
+
+	& .tarjeta {
+		margin-bottom: 50px;
+		height: 630px;
+	}
+}
+
 .comoLogrado {
 	width: 100vw;
 	height: 60vh;
-	background: no-repeat center/100% url('/Iconos/alcanzando-una-meta1.jpg');
+	background: no-repeat center/100% url("/Iconos/alcanzando-una-meta1.jpg");
 	margin-bottom: 200px;
 
 	& .container {
@@ -139,7 +158,7 @@ section {
 		height: 100%;
 		justify-content: space-between;
 
-		& .titulo {
+		& .tituloSeccion {
 			color: white;
 			text-align: start;
 			align-self: flex-start;
@@ -148,8 +167,6 @@ section {
 
 		& .tarjetas {
 			width: 70vw;
-			display: flex;
-			align-items: center;
 			gap: 50px;
 
 			& .tarjeta {
@@ -167,39 +184,13 @@ section {
 	}
 }
 
-.revActividades {
-	background-image: linear-gradient(#0006, #0002),
-		url('/Iconos/grupotrabajando.jpg');
-	background-size: cover;
-	background-position: center center;
-	background-attachment: fixed;
-	padding-top: 30px;
-
-	& .Subtitulo,
-	& .titulo {
-		color: white;
-	}
-
-	& .tarjeta {
-		margin-bottom: 50px;
-		height: 630px;
-
-		& .titulo {
-			color: black;
-		}
-	}
-}
-
 .testimonios {
 	& .tarjetas {
 		width: 70vw;
-		display: flex;
-		align-items: center;
 		gap: 50px;
 
 		& .tarjeta {
 			height: 600px;
-			display: flex;
 			justify-content: space-between;
 			border: 1px solid #2c6dac;
 			box-shadow: 5px 5px 15px #2c6dac;
@@ -310,7 +301,7 @@ footer {
 		width: 100%;
 	}
 
-	& input[type='text'] {
+	& input[type="text"] {
 		background-color: #fff;
 		color: #000;
 	}
