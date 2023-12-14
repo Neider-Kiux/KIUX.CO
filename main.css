@@ -386,7 +386,7 @@ footer {
 	}
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1600px) {
 	.ls-center {
 		display: flex;
 	}

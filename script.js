@@ -46,3 +46,5 @@ function showDivs(n, ubicacion) {
 	x[slideIndex[ubicacion] - 1].style.display = "flex";
 	dots[slideIndex[ubicacion] - 1].className += "ls-red";
 }
+
+
