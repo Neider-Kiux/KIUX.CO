@@ -2,11 +2,10 @@ window.onresize = resolucion;
 window.onload = resolucion;
 
 let grupo = document.getElementsByClassName(`tarjetas-slider`);
-
 var slideIndex = [1, 1, 1, 1, 1];
+
 function resolucion() {
 	var ancho = window.innerWidth;
-	var alto = window.innerHeight;
 	for (i = 0; i < grupo.length; i++) {
 		if (ancho <= 1600) {
 			showDivs(slideIndex[i], i);
@@ -36,7 +35,7 @@ function showDivs(n, ubicacion) {
 	}
 	if (n < 1) {
 		slideIndex[ubicacion] = x.length;
-	}
+	  }
 	for (i = 0; i < x.length; i++) {
 		x[i].style.display = "none";
 	}
@@ -46,5 +45,3 @@ function showDivs(n, ubicacion) {
 	x[slideIndex[ubicacion] - 1].style.display = "flex";
 	dots[slideIndex[ubicacion] - 1].className += "ls-red";
 }
-
-

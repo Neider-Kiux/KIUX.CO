@@ -1,623 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Main</title>
-		<link rel="stylesheet" href="main.css" />
-		<script
-			type="module"
-			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-		></script>
-		<script
-			nomodule
-			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-		></script>
-	</head>
-	<body id="body" onresize="">
-		<main class="main" id="main">
-			<section class="paraQuien" id="funcionalidades">
-				<h1 class="tituloSeccion">¿A quiénes beneficia?</h1>
-				<p class="paraQuien_respuesta">
-					Firmas de abogados, consultores gerenciales y financieros,
-					contadores, economistas, ingenieros, bancas de inversión,
-					arquitectos, consultores de negocios y empresariales,
-					fábricas de software, auditores, empresas afines y
-					profesionales independientes. ¡Totalmente adaptado a cada
-					tipo de consultoría!
-				</p>
-				<div class="tarjetas tarjetas-slider">
-					<div class="tarjeta mySlides-0">
-						<img
-							src="Iconos/iconos-KIUX.04.png"
-							alt="Icono"
-							class="icono"
-						/>
-						<h2 class="tituloTarjeta">Acuerdos de honorarios</h2>
-						<p class="textoTarjeta">
-							KIUX bien podría ser la solución de “time tracking
-							and billing” con la más completa y flexible oferta
-							de acuerdos, dándole a la firma consultora mayor
-							autonomía a la hora de negociar el valor de los
-							honorarios con sus clientes.
-						</p>
-					</div>
 
-					<div class="tarjeta mySlides-0">
-						<img
-							src="Iconos/iconos-KIUX.05.png"
-							alt="Icono"
-							class="icono"
-						/>
-						<h2 class="tituloTarjeta">
-							Costos ABC (Activity Based Costing)
-						</h2>
-						<p class="textoTarjeta">
-							KIUX permite calcular los costos reales de cada
-							proyecto con base en las actividades de sus
-							consultores y los gastos operacionales cargados a
-							cada uno. Todo con un máximo nivel de detalle para
-							su análisis.
-						</p>
-					</div>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Main</title>
+	<link rel="stylesheet" href="main.css" />
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
 
-					<div class="tarjeta mySlides-0">
-						<img
-							src="Iconos/iconos-KIUX.07.png"
-							alt="Icono"
-							class="icono"
-						/>
-						<h2 class="tituloTarjeta">Indicadores de gestión</h2>
-						<p class="texto">
-							Saber cómo va la firma en todo momento gracias a los
-							indicadores de gestión que KIUX calcula y te
-							presenta en tiempo real, para que puedas tomar
-							decisiones a partir de información 100% confiable y
-							oportuna.
-						</p>
-					</div>
-
-					<div class="tarjeta mySlides-0">
-						<img
-							src="Iconos/iconos-KIUX.08.png"
-							alt="Icono"
-							class="icono"
-						/>
-						<h2 class="tituloTarjeta">Business intelligence</h2>
-						<p class="texto">
-							Más que un software, KIUX es una “metodología
-							integral” que incorpora estrategias, aplicaciones,
-							datos y tecnologías para tomar decisiones oportunas
-							y acertadas que conduzcan a mejorar de manera
-							visible y progresiva el desempeño y competitividad
-							de la firma.
-						</p>
-					</div>
+<body id="body" onresize="">
+	<main class="main" id="main">
+		<section class="paraQuien" id="funcionalidades">
+			<h1 id="tituloFantasma" class="tituloFantasma"></h1>
+			<h1 class="tituloSeccion">¿A quiénes beneficia?</h1>
+			<p class="Subtitulo">
+				Firmas de abogados, consultores gerenciales y financieros,
+				contadores, economistas, ingenieros, bancas de inversión,
+				arquitectos, consultores de negocios y empresariales,
+				fábricas de software, auditores, empresas afines y
+				profesionales independientes. ¡Totalmente adaptado a cada
+				tipo de consultoría!
+			</p>
+			<div class="tarjetas tarjetas-slider">
+				<div class="tarjeta mySlides-0">
+					<img src="Iconos/iconos-KIUX.04.png" alt="Icono" class="icono" />
+					<h2 class="tituloTarjeta">Acuerdos de honorarios</h2>
+					<p class="textoTarjeta">
+						KIUX bien podría ser la solución de “time tracking
+						and billing” con la más completa y flexible oferta
+						de acuerdos, dándole a la firma consultora mayor
+						autonomía a la hora de negociar el valor de los
+						honorarios con sus clientes.
+					</p>
 				</div>
-				<div class="ls-center">
-					<!-- NOTA: Botones para nevagación en las tarjetas, en tamaño normal display: none-->
-					<div class="ls-buttons">
-						<button
-							class="ls-button-dir ls-light-grey"
-							onclick="plusDivs(-1, 0)"
-						>
-							<ion-icon name="caret-back-outline"></ion-icon>
-						</button>
-						<button
-							class="ls-button ubicacion-0 ls-red"
-							onclick="currentDiv(1, 0)"
-						>
-							
-						</button>
-						<button
-							class="ls-button ubicacion-0 ls-red"
-							onclick="currentDiv(2, 0)"
-						>
-							
-						</button>
-						<button
-							class="ls-button ubicacion-0 ls-red"
-							onclick="currentDiv(3, 0)"
-						>
-							
-						</button>
-						<button
-							class="ls-button ubicacion-0 ls-red"
-							onclick="currentDiv(4, 0)"
-						>
-							
-						</button>
-						<button
-							class="ls-button-dir ls-light-grey"
-							onclick="plusDivs(1, 0)"
-						>
-							<ion-icon name="caret-forward-outline"></ion-icon>
-						</button>
-					</div>
+
+				<div class="tarjeta mySlides-0">
+					<img src="Iconos/iconos-KIUX.05.png" alt="Icono" class="icono" />
+					<h2 class="tituloTarjeta">
+						Costos ABC (Activity Based Costing)
+					</h2>
+					<p class="textoTarjeta">
+						KIUX permite calcular los costos reales de cada
+						proyecto con base en las actividades de sus
+						consultores y los gastos operacionales cargados a
+						cada uno. Todo con un máximo nivel de detalle para
+						su análisis.
+					</p>
 				</div>
-			</section>
 
-			<section class="revActividades" id="">
-				<h1 class="tituloSeccion">Revisión de actividades</h1>
-				<h2 class="Subtitulo">
-					Con KIUX puedes revisar "en pantalla" las actividades
-					registradas de todos tus proyectos y consultores, y los
-					cambios que hagas se procesan en tiempo real. Olvídate de
-					revisar hojas impresas o PDFs.
-				</h2>
-				<div class="tarjetas tarjetas-slider">
-					<div class="tarjeta mySlides-1">
-						<img
-							src="Iconos/iconos-KIUX.06.png"
-							alt="Icono"
-							class="icono"
-						/>
-						<h2 class="ravActividades tituloTarjeta">Adaptabilidad</h2>
-						<p class="ravActividades texto">
-							Gracias a la flexibilidad de su configuración, KIUX
-							se adapta a las necesidades profesionales de la
-							firma, a todas sus especialidades de servicios, a su
-							modelo organizacional, a los idiomas que maneje y
-							monedas que requiera, para que la firma sienta que
-							es una solución a su medida.
-						</p>
-					</div>
-
-					<div class="tarjeta mySlides-1">
-						<img
-							src="Iconos/iconos-KIUX.03.png"
-							alt="Icono"
-							class="icono"
-						/>
-						<h2 class="ravActividadestituloTarjeta">
-							Donde tú prefieras
-						</h2>
-						<p class="ravActividades texto">
-							KIUX funciona exactamente igual desde cualquier
-							computador, tablet o celular para que seas tú quien
-							escoja siempre en dónde quieres trabajar y sin tener
-							que instalar ni configurar nada.
-						</p>
-					</div>
-
-					<div class="tarjeta mySlides-1">
-						<img
-							src="Iconos/iconos-KIUX.02.png"
-							alt="Icono"
-							class="icono"
-						/>
-						<h2 class="ravActividades tituloTarjeta">Time tracking</h2>
-						<p class="ravActividades texto">
-							Gracias a nuestro sistema para el registro de
-							actividades y tiempos, con características como
-							cumplimiento de metas, fácil revisión de avances,
-							estadísticas en tiempo real y disponibilidad desde
-							cualquier dispositivo, KIUX incorpora una dinámica
-							que aumenta de manera significativa la productividad
-							de toda la firma.
-						</p>
-					</div>
-
-					<div class="tarjeta mySlides-1">
-						<img
-							src="Iconos/iconos-KIUX.05.png"
-							alt="Icono"
-							class="icono"
-						/>
-						<h2 class="ravActividades tituloTarjeta">Productividad</h2>
-						<p class="ravActividades texto">
-							Prometer productividad es fácil, pero desarrollar
-							una dinámica de trabajo al interior de tu firma que
-							garantice un incremento visible de la productividad
-							requiere apoyo tecnológico efectivo y eso es lo que
-							KIUX en efecto te entrega.
-						</p>
-					</div>
+				<div class="tarjeta mySlides-0">
+					<img src="Iconos/iconos-KIUX.07.png" alt="Icono" class="icono" />
+					<h2 class="tituloTarjeta">Indicadores de gestión</h2>
+					<p class="texto">
+						Saber cómo va la firma en todo momento gracias a los
+						indicadores de gestión que KIUX calcula y te
+						presenta en tiempo real, para que puedas tomar
+						decisiones a partir de información 100% confiable y
+						oportuna.
+					</p>
 				</div>
-				<div class="ls-center">
-					<!-- NOTA: Botones para nevagación en las tarjetas, en tamaño normal display: none-->
-					<div class="ls-buttons">
-						<button
-							class="ls-button-dir ls-light-grey"
-							onclick="plusDivs(-1, 1)"
-						>
-							<ion-icon name="caret-back-outline"></ion-icon>
-						</button>
-						<button
-							class="ls-button ubicacion-1 ls-red"
-							onclick="currentDiv(1, 1)"
-						>
-							
-						</button>
-						<button
-							class="ls-button ubicacion-1 ls-red"
-							onclick="currentDiv(2, 1)"
-						>
-							
-						</button>
-						<button
-							class="ls-button ubicacion-1 ls-red"
-							onclick="currentDiv(3, 1)"
-						>
-							
-						</button>
-						<button
-							class="ls-button ubicacion-1 ls-red"
-							onclick="currentDiv(4, 1)"
-						>
-							
-						</button>
-						<button
-							class="ls-button-dir ls-light-grey"
-							onclick="plusDivs(1, 1)"
-						>
-							<ion-icon name="caret-forward-outline"></ion-icon>
-						</button>
-					</div>
-			</section>
 
-			<section class="equipos">
-				<h1 class="tituloSeccion">Equipos</h1>
-				<h2 class="Subtitulo">
-					No importa si tu firma tiene 1, 50 o 5,000 consultores.
-					Gracias a la estructura por Equipos de KIUX la gestión de
-					usuarios, tarifas y acuerdos de honorarios entre otras, es
-					ágil, dinámica, intuitiva y sencilla.
-				</h2>
-				<div class="tarjetas tarjetas-slider">
-					<div class="tarjeta mySlides-2">
-						<img
-							src="Iconos/iconos-KIUX.08.png"
-							alt="Icono"
-							class="icono"
-						/>
-						<h2 class="equipos tituloTarjeta">
-							Facturación de honorarios
-						</h2>
-						<p class="equipos texto">
-							KIUX permite que cada consultor de la firma registre
-							sus actividades en los proyectos correspondientes,
-							para liquidar y facturar los honorarios con base en
-							el acuerdo negociado para cada proyecto.
-						</p>
-					</div>
-
-					<div class="tarjeta mySlides-2">
-						<img
-							src="Iconos/iconos-KIUX.10.png"
-							alt="Icono"
-							class="icono"
-						/>
-						<h2 class="equipos tituloTarjeta">Facturación de gastos</h2>
-						<p class="equipos texto">
-							KIUX también permite registrar y facturar gastos
-							reembolsables y operacionales para cada proyecto,
-							con lo cual se tiene una facturación unificada de
-							honorarios y gastos.
-						</p>
-					</div>
-
-					<div class="tarjeta mySlides-2">
-						<img
-							src="Iconos/iconos-KIUX.11.png"
-							alt="Icono"
-							class="icono"
-						/>
-						<h2 class="equipos tituloTarjeta">Facturación electrónica</h2>
-						<p class="equipos texto">
-							KIUX genera facturas electrónicas que además cumplir
-							la normatividad vigente, incorporan información
-							adicional como el cálculo de retenciones y anexos
-							con la relación detallada de los servicios
-							prestados.
-						</p>
-					</div>
-
-					<div class="tarjeta mySlides-2">
-						<img
-							src="Iconos/iconos-KIUX.12.png"
-							alt="Icono"
-							class="icono"
-						/>
-						<h2 class="equipos tituloTarjeta">Impuestos</h2>
-						<p class="equipos texto">
-							La configuración de impuestos y perfiles tributarios
-							disponible en KIUX es tan flexible que permite
-							ajustar el sistema a las normas tributarias de
-							cualquier país.
-						</p>
-					</div>
+				<div class="tarjeta mySlides-0">
+					<img src="Iconos/iconos-KIUX.08.png" alt="Icono" class="icono" />
+					<h2 class="tituloTarjeta">Business intelligence</h2>
+					<p class="texto">
+						Más que un software, KIUX es una “metodología
+						integral” que incorpora estrategias, aplicaciones,
+						datos y tecnologías para tomar decisiones oportunas
+						y acertadas que conduzcan a mejorar de manera
+						visible y progresiva el desempeño y competitividad
+						de la firma.
+					</p>
 				</div>
-				<div class="ls-center">
-					<!-- NOTA: Botones para nevagación en las tarjetas, en tamaño normal display: none-->
-					<div class="ls-buttons">
-						<button
-							class="ls-button-dir ls-light-grey"
-							onclick="plusDivs(-1, 2)"
-						>
-							<ion-icon name="caret-back-outline"></ion-icon>
-						</button>
-						<button
-							class="ls-button ubicacion-2 ls-red"
-							onclick="currentDiv(1, 2)"
-						>
-							
-						</button>
-						<button
-							class="ls-button ubicacion-2 ls-red"
-							onclick="currentDiv(2, 2)"
-						>
-							
-						</button>
-						<button
-							class="ls-button ubicacion-2 ls-red"
-							onclick="currentDiv(3, 2)"
-						>
-							
-						</button>
-						<button
-							class="ls-button ubicacion-2 ls-red"
-							onclick="currentDiv(4, 2)"
-						>
-							
-						</button>
-						<button
-							class="ls-button-dir ls-light-grey"
-							onclick="plusDivs(1, 2)"
-						>
-							<ion-icon name="caret-forward-outline"></ion-icon>
-						</button>
-					</div>
-				</div>
-			</section>
-
-			<section class="comoLogrado">
-				<div class="container">
-					<h1 class="tituloSeccion">¿Cómo lo logramos?</h1>
-					<div class="tarjetas tarjetas-slider">
-						<div class="tarjeta mySlides-3">
-							Aplicando nuestra “metodología integral de trabajo”
-							para firmas consultoras que quieran ser más
-							productivas, rentables y competitivas.
-						</div>
-						<div class="tarjeta mySlides-3">
-							Apoyados en un sistema de información robusto,
-							maduro, flexible y corporativo.
-						</div>
-						<div class="tarjeta mySlides-3">
-							Con el acompañamiento y la orientación permanente de
-							nuestro equipo de profesionales.
-						</div>
-					</div>
-					<div class="ls-center">
-						<!-- NOTA: Botones para nevagación en las tarjetas, en tamaño normal display: none-->
-						<div class="ls-buttons">
-							<button
-								class="ls-button-dir ls-light-grey"
-								onclick="plusDivs(-1, 3)"
-							>
-								<ion-icon name="caret-back-outline"></ion-icon>
-							</button>
-							<button
-								class="ls-button ubicacion-3 ls-red"
-								onclick="currentDiv(1, 3)"
-							>
-								
-							</button>
-							<button
-								class="ls-button ubicacion-3 ls-red"
-								onclick="currentDiv(2, 3)"
-							>
-								
-							</button>
-							<button
-								class="ls-button ubicacion-3 ls-red"
-								onclick="currentDiv(3, 3)"
-							>
-								
-							</button>
-							<button
-								class="ls-button-dir ls-light-grey"
-								onclick="plusDivs(1, 3)"
-							>
-								<ion-icon name="caret-forward-outline"></ion-icon>
-							</button>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="testimonios" id="testimonios">
-				<h1 class="tituloSeccion">¿Qué dicen nuestros usuarios?</h1>
-				<div class="tarjetas tarjetas-slider">
-					<div class="tarjeta mySlides-4">
-						<div class="testimonio_inicio">
-							<img
-								src="Iconos/testimonio1.png"
-								alt="Icono"
-								class="icono"
-							/>
-							<p class="texto">
-								<span>"</span>
-								KIUX es el mejor sistema que hemos tenido en B&U
-								para gestionar nuestro proceso de liquidación y
-								facturación de honorarios
-								<span>"</span>
-							</p>
-						</div>
-
-						<div class="nombres">
-							<h3 class="nombreFirma">
-								Brigard & Urrutia Abogados
-							</h3>
-
-							<h4>Nidia López de Pabón</h4>
-						</div>
-					</div>
-
-					<div class="tarjeta mySlides-4">
-						<div class="testimonio_inicio">
-							<img
-								src="Iconos//testimonio2.png"
-								alt="Icono"
-								class="icono"
-							/>
-							<p class="texto">
-								<span>"</span>
-								Recomiendo el sistema de información KIUX. Ha
-								sido muy útil para nuestra Firma.
-								<span>"</span>
-							</p>
-						</div>
-
-						<div class="nombres">
-							<h3 class="nombreFirma">Godoy & Hoyos Abogados</h3>
-
-							<h4>Catalina Hoyos Jiménez</h4>
-						</div>
-					</div>
-
-					<div class="tarjeta mySlides-4">
-						<div class="testimonio_inicio">
-							<img
-								src="Iconos/testimonio3.png"
-								alt="Icono"
-								class="icono"
-							/>
-							<p class="texto">
-								<span>"</span>
-								KIUX es un adecuado sistema de información para
-								control de tiempos, flexible y fácil de manejar.
-								Siempre actualizado a los requerimientos nuevos
-								que puedan surgir en los negocios
-								<span>"</span>
-							</p>
-						</div>
-
-						<div class="nombres">
-							<h3 class="nombreFirma">
-								Castro Leiva Rendón Criales Abogados
-							</h3>
-							<h4>Catalina Hoyos JiménezMario Criales</h4>
-						</div>
-					</div>
-				</div>
-				<div class="ls-center">
-					<!-- NOTA: Botones para nevagación en las tarjetas, en tamaño normal display: none-->
-					<div class="ls-buttons">
-						<button
-							class="ls-button-dir ls-light-grey"
-							onclick="plusDivs(-1, 4)"
-						>
-							<ion-icon name="caret-back-outline"></ion-icon>
-						</button>
-						<button
-							class="ls-button ubicacion-4 ls-red"
-							onclick="currentDiv(1, 4)"
-						>
-							
-						</button>
-						<button
-							class="ls-button ubicacion-4 ls-red"
-							onclick="currentDiv(2, 4)"
-						>
-							
-						</button>
-						<button
-							class="ls-button ubicacion-4 ls-red"
-							onclick="currentDiv(3, 4)"
-						>
-							
-						</button>
-						<button
-							class="ls-button-dir ls-light-grey"
-							onclick="plusDivs(1, 4)"
-						>
-							<ion-icon name="caret-forward-outline"></ion-icon>
-						</button>
-					</div>
-				</div>
-			</section>
-			<section class="contactanos" id="contacto">
-				<h1 class="tituloSeccion" style="color: #f9a223">
-					Contáctanos
-				</h1>
-				[contact-form-7 id="356e9ed" title="Formulario de contacto 1"]
-			</section>
-		</main>
-
-		<footer>
-			<div class="inicial">
-				<section class="contacto">
-					<div class="correo">
-						<ion-icon name="mail-outline"></ion-icon>
-						<h3 class="correoText">kiux@kiux.com</h3>
-					</div>
-					<div class="whatsapp">
-						<ion-icon name="logo-whatsapp"></ion-icon>
-						<h3 class="whatsappText">+57 300 337 01 56</h3>
-					</div>
-				</section>
-
-				<section class="sellos">
-					<img
-						class="icono LogoKiux"
-						src="Iconos/kiux_logo_header_web.png"
-						alt="Icono Kiux"
-					/>
-					<img
-						class="icono SelloCalidad"
-						src="Iconos/SelloCalidad.png"
-						alt="Sello calidad"
-					/>
-				</section>
-
-				<section class="redes">
-					<a
-						class="icono facebookIcono"
-						href="https://www.facebook.com/KIUX/"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<ion-icon name="logo-facebook"></ion-icon>
-					</a>
-
-					<a
-						class="icono linkedinIcono"
-						href="https://www.linkedin.com/company/kiux"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<ion-icon name="logo-linkedin"></ion-icon>
-					</a>
-
-					<a
-						class="icono facebookIcono"
-						href="https://twitter.com/kiux"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<ion-icon name="logo-twitter"></ion-icon>
-					</a>
-
-					<a
-						class="icono facebookIcono"
-						href="https://www.youtube.com/channel/UC9gvxN2H8hoU5eSYPGMjtdA"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<ion-icon name="logo-youtube"></ion-icon>
-					</a>
-				</section>
 			</div>
-			<div class="Copyright">
-				<p class="texto">
-					© Copyright 2022 - todos los derechos reservados
-				</p>
+			<div class="ls-center">
+				<!-- NOTA: Botones para nevagación en las tarjetas, en tamaño normal display: none-->
+				<div class="ls-buttons">
+					<button class="ls-button-dir ls-light-grey" onclick="plusDivs(-1, 0)">
+						<ion-icon name="caret-back-outline"></ion-icon>
+					</button>
+					<button class="ls-button ubicacion-0 ls-red" onclick="currentDiv(1, 0)"></button>
+					<button class="ls-button ubicacion-0 ls-red" onclick="currentDiv(2, 0)"></button>
+
+					<button class="ls-button ubicacion-0 ls-red" onclick="currentDiv(3, 0)"></button>
+					<button class="ls-button ubicacion-0 ls-red" onclick="currentDiv(4, 0)">
+
+					</button><button class="ls-button-dir ls-light-grey" onclick="plusDivs(1, 0)">
+						<ion-icon name="caret-forward-outline"></ion-icon>
+					</button>
+				</div>
 			</div>
-		</footer>
-		<script  src="script.js">
-			
-		</script>
-	</body>
+		</section>
+
+		<section class="revActividades" id="">
+			<h1 class="tituloSeccion">Revisión de actividades</h1>
+			<h2 class="Subtitulo">
+				Con KIUX puedes revisar "en pantalla" las actividades
+				registradas de todos tus proyectos y consultores, y los
+				cambios que hagas se procesan en tiempo real. Olvídate de
+				revisar hojas impresas o PDFs.
+			</h2>
+			<div class="tarjetas tarjetas-slider">
+				<div class="tarjeta mySlides-1">
+					<img src="Iconos/iconos-KIUX.06.png" alt="Icono" class="icono" />
+					<h2 class="ravActividades tituloTarjeta">Adaptabilidad</h2>
+					<p class="ravActividades texto">
+						Gracias a la flexibilidad de su configuración, KIUX
+						se adapta a las necesidades profesionales de la
+						firma, a todas sus especialidades de servicios, a su
+						modelo organizacional, a los idiomas que maneje y
+						monedas que requiera, para que la firma sienta que
+						es una solución a su medida.
+					</p>
+				</div>
+
+				<div class="tarjeta mySlides-1">
+					<img src="Iconos/iconos-KIUX.03.png" alt="Icono" class="icono" />
+					<h2 class="ravActividadestituloTarjeta">
+						Donde tú prefieras
+					</h2>
+					<p class="ravActividades texto">
+						KIUX funciona exactamente igual desde cualquier
+						computador, tablet o celular para que seas tú quien
+						escoja siempre en dónde quieres trabajar y sin tener
+						que instalar ni configurar nada.
+					</p>
+				</div>
+
+				<div class="tarjeta mySlides-1">
+					<img src="Iconos/iconos-KIUX.02.png" alt="Icono" class="icono" />
+					<h2 class="ravActividades tituloTarjeta">Time tracking</h2>
+					<p class="ravActividades texto">
+						Gracias a nuestro sistema para el registro de
+						actividades y tiempos, con características como
+						cumplimiento de metas, fácil revisión de avances,
+						estadísticas en tiempo real y disponibilidad desde
+						cualquier dispositivo, KIUX incorpora una dinámica
+						que aumenta de manera significativa la productividad
+						de toda la firma.
+					</p>
+				</div>
+
+				<div class="tarjeta mySlides-1">
+					<img src="Iconos/iconos-KIUX.05.png" alt="Icono" class="icono" />
+					<h2 class="ravActividades tituloTarjeta">Productividad</h2>
+					<p class="ravActividades texto">
+						Prometer productividad es fácil, pero desarrollar
+						una dinámica de trabajo al interior de tu firma que
+						garantice un incremento visible de la productividad
+						requiere apoyo tecnológico efectivo y eso es lo que
+						KIUX en efecto te entrega.
+					</p>
+				</div>
+			</div>
+			<div class="ls-center">
+				<!-- NOTA: Botones para nevagación en las tarjetas, en tamaño normal display: none-->
+				<div class="ls-buttons">
+					<button class="ls-button-dir ls-light-grey" onclick="plusDivs(-1, 1)">
+						<ion-icon name="caret-back-outline"></ion-icon>
+					</button>
+					<button class="ls-button ubicacion-1 ls-red" onclick="currentDiv(1, 1)"></button>
+					<button class="ls-button ubicacion-1 ls-red" onclick="currentDiv(2, 1)">
+
+					</button>
+					<button class="ls-button ubicacion-1 ls-red" onclick="currentDiv(3, 1)">
+
+					</button>
+					<button class="ls-button ubicacion-1 ls-red" onclick="currentDiv(4, 1)">
+
+					</button>
+					<button class="ls-button-dir ls-light-grey" onclick="plusDivs(1, 1)">
+						<ion-icon name="caret-forward-outline"></ion-icon>
+					</button>
+				</div>
+		</section>
+
+		<section class="equipos">
+			<h1 class="tituloSeccion">Equipos</h1>
+			<h2 class="Subtitulo">
+				No importa si tu firma tiene 1, 50 o 5,000 consultores.
+				Gracias a la estructura por Equipos de KIUX la gestión de
+				usuarios, tarifas y acuerdos de honorarios entre otras, es
+				ágil, dinámica, intuitiva y sencilla.
+			</h2>
+			<div class="tarjetas tarjetas-slider">
+				<div class="tarjeta mySlides-2">
+					<img src="Iconos/iconos-KIUX.08.png" alt="Icono" class="icono" />
+					<h2 class="equipos tituloTarjeta">
+						Facturación de honorarios
+					</h2>
+					<p class="equipos texto">
+						KIUX permite que cada consultor de la firma registre
+						sus actividades en los proyectos correspondientes,
+						para liquidar y facturar los honorarios con base en
+						el acuerdo negociado para cada proyecto.
+					</p>
+				</div>
+
+				<div class="tarjeta mySlides-2">
+					<img src="Iconos/iconos-KIUX.10.png" alt="Icono" class="icono" />
+					<h2 class="equipos tituloTarjeta">Facturación de gastos</h2>
+					<p class="equipos texto">
+						KIUX también permite registrar y facturar gastos
+						reembolsables y operacionales para cada proyecto,
+						con lo cual se tiene una facturación unificada de
+						honorarios y gastos.
+					</p>
+				</div>
+
+				<div class="tarjeta mySlides-2">
+					<img src="Iconos/iconos-KIUX.11.png" alt="Icono" class="icono" />
+					<h2 class="equipos tituloTarjeta">Facturación electrónica</h2>
+					<p class="equipos texto">
+						KIUX genera facturas electrónicas que además cumplir
+						la normatividad vigente, incorporan información
+						adicional como el cálculo de retenciones y anexos
+						con la relación detallada de los servicios
+						prestados.
+					</p>
+				</div>
+
+				<div class="tarjeta mySlides-2">
+					<img src="Iconos/iconos-KIUX.12.png" alt="Icono" class="icono" />
+					<h2 class="equipos tituloTarjeta">Impuestos</h2>
+					<p class="equipos texto">
+						La configuración de impuestos y perfiles tributarios
+						disponible en KIUX es tan flexible que permite
+						ajustar el sistema a las normas tributarias de
+						cualquier país.
+					</p>
+				</div>
+			</div>
+			<div class="ls-center">
+				<!-- NOTA: Botones para nevagación en las tarjetas, en tamaño normal display: none-->
+				<div class="ls-buttons">
+					<button class="ls-button-dir ls-light-grey" onclick="plusDivs(-1, 2)">
+						<ion-icon name="caret-back-outline"></ion-icon>
+					</button>
+					<button class="ls-button ubicacion-2 ls-red" onclick="currentDiv(1, 2)">
+
+					</button>
+					<button class="ls-button ubicacion-2 ls-red" onclick="currentDiv(2, 2)">
+
+					</button>
+					<button class="ls-button ubicacion-2 ls-red" onclick="currentDiv(3, 2)">
+
+					</button>
+					<button class="ls-button ubicacion-2 ls-red" onclick="currentDiv(4, 2)">
+
+					</button>
+					<button class="ls-button-dir ls-light-grey" onclick="plusDivs(1, 2)">
+						<ion-icon name="caret-forward-outline"></ion-icon>
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="comoLogrado">
+			<div class="container">
+				<h1 class="tituloSeccion">¿Cómo lo logramos?</h1>
+				<div class="tarjetas tarjetas-slider">
+					<div class="tarjeta mySlides-3">
+						Aplicando nuestra “metodología integral de trabajo”
+						para firmas consultoras que quieran ser más
+						productivas, rentables y competitivas.
+					</div>
+					<div class="tarjeta mySlides-3">
+						Apoyados en un sistema de información robusto,
+						maduro, flexible y corporativo.
+					</div>
+					<div class="tarjeta mySlides-3">
+						Con el acompañamiento y la orientación permanente de
+						nuestro equipo de profesionales.
+					</div>
+				</div>
+				<div class="ls-center">
+					<!-- NOTA: Botones para nevagación en las tarjetas, en tamaño normal display: none-->
+					<div class="ls-buttons">
+						<button class="ls-button-dir ls-light-grey" onclick="plusDivs(-1, 3)">
+							<ion-icon name="caret-back-outline"></ion-icon>
+						</button>
+						<button class="ls-button ubicacion-3 ls-red" onclick="currentDiv(1, 3)">
+
+						</button>
+						<button class="ls-button ubicacion-3 ls-red" onclick="currentDiv(2, 3)">
+
+						</button>
+						<button class="ls-button ubicacion-3 ls-red" onclick="currentDiv(3, 3)">
+
+						</button>
+						<button class="ls-button-dir ls-light-grey" onclick="plusDivs(1, 3)">
+							<ion-icon name="caret-forward-outline"></ion-icon>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="testimonios" id="testimonios">
+			<h1 class="tituloSeccion">¿Qué dicen nuestros usuarios?</h1>
+			<div class="tarjetas tarjetas-slider">
+				<div class="tarjeta mySlides-4">
+					<div class="testimonio_inicio">
+						<img src="Iconos/testimonio1.png" alt="Icono" class="icono" />
+						<p class="texto">
+							<span>"</span>
+							KIUX es el mejor sistema que hemos tenido en B&U
+							para gestionar nuestro proceso de liquidación y
+							facturación de honorarios
+							<span>"</span>
+						</p>
+					</div>
+
+					<div class="nombres">
+						<h3 class="nombreFirma">
+							Brigard & Urrutia Abogados
+						</h3>
+
+						<h4>Nidia López de Pabón</h4>
+					</div>
+				</div>
+
+				<div class="tarjeta mySlides-4">
+					<div class="testimonio_inicio">
+						<img src="Iconos//testimonio2.png" alt="Icono" class="icono" />
+						<p class="texto">
+							<span>"</span>
+							Recomiendo el sistema de información KIUX. Ha
+							sido muy útil para nuestra Firma.
+							<span>"</span>
+						</p>
+					</div>
+
+					<div class="nombres">
+						<h3 class="nombreFirma">Godoy & Hoyos Abogados</h3>
+
+						<h4>Catalina Hoyos Jiménez</h4>
+					</div>
+				</div>
+
+				<div class="tarjeta mySlides-4">
+					<div class="testimonio_inicio">
+						<img src="Iconos/testimonio3.png" alt="Icono" class="icono" />
+						<p class="texto">
+							<span>"</span>
+							KIUX es un adecuado sistema de información para
+							control de tiempos, flexible y fácil de manejar.
+							Siempre actualizado a los requerimientos nuevos
+							que puedan surgir en los negocios
+							<span>"</span>
+						</p>
+					</div>
+
+					<div class="nombres">
+						<h3 class="nombreFirma">
+							Castro Leiva Rendón Criales Abogados
+						</h3>
+						<h4>Catalina Hoyos JiménezMario Criales</h4>
+					</div>
+				</div>
+			</div>
+			<div class="ls-center">
+				<!-- NOTA: Botones para nevagación en las tarjetas, en tamaño normal display: none-->
+				<div class="ls-buttons">
+					<button class="ls-button-dir ls-light-grey" onclick="plusDivs(-1, 4)">
+						<ion-icon name="caret-back-outline"></ion-icon>
+					</button>
+					<button class="ls-button ubicacion-4 ls-red" onclick="currentDiv(1, 4)">
+
+					</button>
+					<button class="ls-button ubicacion-4 ls-red" onclick="currentDiv(2, 4)">
+
+					</button>
+					<button class="ls-button ubicacion-4 ls-red" onclick="currentDiv(3, 4)">
+
+					</button>
+					<button class="ls-button-dir ls-light-grey" onclick="plusDivs(1, 4)">
+						<ion-icon name="caret-forward-outline"></ion-icon>
+					</button>
+				</div>
+			</div>
+		</section>
+		<section class="contactanos" id="contacto">
+			<h1 class="tituloSeccion" style="color: #f9a223">
+				Contáctanos
+			</h1>
+			[contact-form-7 id="356e9ed" title="Formulario de contacto 1"]
+		</section>
+	</main>
+
+	<footer>
+		<div class="inicial">
+			<section class="contacto">
+				<div class="correo">
+					<ion-icon name="mail-outline"></ion-icon>
+					<h3 class="correoText">kiux@kiux.com</h3>
+				</div>
+				<div class="whatsapp">
+					<ion-icon name="logo-whatsapp"></ion-icon>
+					<h3 class="whatsappText">+57 300 337 01 56</h3>
+				</div>
+			</section>
+
+			<section class="sellos">
+				<img class="icono LogoKiux" src="Iconos/kiux_logo_header_web.png" alt="Icono Kiux" />
+				<img class="icono SelloCalidad" src="Iconos/SelloCalidad.png" alt="Sello calidad" />
+			</section>
+
+			<section class="redes">
+				<a class="icono facebookIcono" href="https://www.facebook.com/KIUX/" target="_blank"
+					rel="noopener noreferrer">
+					<ion-icon name="logo-facebook"></ion-icon>
+				</a>
+
+				<a class="icono linkedinIcono" href="https://www.linkedin.com/company/kiux" target="_blank"
+					rel="noopener noreferrer">
+					<ion-icon name="logo-linkedin"></ion-icon>
+				</a>
+
+				<a class="icono facebookIcono" href="https://twitter.com/kiux" target="_blank"
+					rel="noopener noreferrer">
+					<ion-icon name="logo-twitter"></ion-icon>
+				</a>
+
+				<a class="icono facebookIcono" href="https://www.youtube.com/channel/UC9gvxN2H8hoU5eSYPGMjtdA"
+					target="_blank" rel="noopener noreferrer">
+					<ion-icon name="logo-youtube"></ion-icon>
+				</a>
+			</section>
+		</div>
+		<div class="Copyright">
+			<p class="texto">
+				© Copyright 2022 - todos los derechos reservados
+			</p>
+		</div>
+	</footer>
+	<script src="script.js">
+
+	</script>
+</body>
+
 </html>
